@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="bg-header">
+            <img src="./z3853458515447_8b9ab88f9fb9410af9150c6660d0d7ea.jpg" alt="">
+        </div>
+        <div class="nav">
+            <div class="logo">
+                <a href="./index.html"><img src="./bidv.png" alt=""></a>
+            </div>
+            <div class="seach">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm tính năng" class="seach_input">
+            </div>
+        </div>
+        <div class="user">
+            <img src="./avt.jpg" alt="">
+            <div class="name">
+                <span>Chào buổi tối</span>
+                <span>ĐẶNG HOÀNG DƯƠNG</span>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="account-information">
+            <div class="account-checkout">
+                <div class="checkout">Tài khoản thanh toán</div>
+                <div class="account">22210003587165</div>
+                <!-- <input type="password" placeholder="22210003587165"> -->
+            </div>
+            <div class="list-account">
+                <div class="list">Danh sách</div>
+                <i class="fa-cartac fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="list_category">
+            <div class="item bank">
+                <i class="icon-fa fa-solid fa-right-left"></i>
+                <div class="txt-bank">Chuyển tiền</div>
+            </div>
+            <div class="item cart">
+                <i class="icon-fa fa-regular fa-credit-card"></i>
+                <div class="txt-bank">Dịch vụ thẻ</div>
+            </div>
+            <div class="item pig">
+                <i class="icon-fa fa-solid fa-piggy-bank"></i>
+                <div class="txt-bank">Tiết kiệm</div>
+            </div>
+            <div id="get_account" class="item shopping">
+                <i class="icon-fa fa-solid fa-cart-shopping"></i>
+                <div class="txt-bank">Shopping</div>
+
+            </div>
+        </div>
+    </div>
+    <div id="list_saving">
+        <div class="header_list">
+            <div class="icon_left ">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="txt_acc">Tài khoản</div>
+            <a href="#list_saving" class="resest">
+                <i class="fa-solid fa-rotate"></i>
+            </a>
+
+        </div>
+        <div class="container_list">
+            <div class="sliderTab">
+                <ul class="nav-tabs">
+                    <li class="nav-item active" data-target="tab1">Thanh toán</li>
+                    <li class="nav-item" data-target="tab2">Tiết kiệm</li>
+                    <li class="nav-item" data-target="tab3">Tiền vay</li>
+                    <div class="bg-active"></div>
+                </ul>
+                <div class="content-tabs">
+                    <div class="tab active" id="tab1">
+                        <div class="saving">
+                            <div class="surplus">
+                                <div class="surplus_txt"
+                                style="
+                                margin-bottom: 2px;
+                            "
+                                >Tài khoản thanh toán</div>
+                                <div class="surplus_stk"
+                                style="
+                                margin-bottom: 10px;
+                            "
+                                >22210003587165</div>
+                                <div class="show_account">
+                                    <input type="password" value="1,152,543 VND" id="txt-account--input">
+                                    <i onclick="changerShow()" class=" icon_show fa-solid fa-eye-slash"></i>
+                                    <i onclick="changerShow()" class=" icon_show fa-solid fa-eye"></i>
+                                   </div>
+                            </div>
+                            <div class="account_ones">
+                                <div id="show_iforAcc" class="list_txt">Xem chi tiết</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab2">
+                        <div class="saving">
+                            <div class="surplus">
+                                <div class="surplus_txt">Tổng số dư có kỳ hạn</div>
+                                <!-- <div class="surplus_stk">100,052,543 VND</div> -->
+                               <div class="hide_account">
+                                <input type="password" value="100,052,543 VND" class="txt-account--input">
+                                <i onclick="changerHide()" class=" icon_show fa-solid fa-eye-slash"></i>
+                                <i onclick="changerHide()" class=" icon_show fa-solid fa-eye"></i>
+                               </div>
+                            </div>
+                            <div class="account_one">
+                                <div class="list">2 tài khoản</div>
+                            </div>
+                        </div>
+                        <div class="account_baneer">
+                            <div class="balance_information">
+                                <span>Ngày gửi: <b>07/09/2022</b></span>
+                                <div class="balance">
+                                    <div class="information">
+                                        <span>Số dư gốc khả dụng</span>
+                                        <span>65,000,000 VND</span>
+                                    </div>
+                                    <!-- <div class="icon_information">
+                                        <i class="fa-solid fa-right-long"></i>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="balance_information">
+                                <span>Ngày gửi: <b>18/11/2022</b></span>
+                                <div class="balance">
+                                    <div class="information">
+                                        <span>Số dư gốc khả dụng</span>
+                                        <span>35,000,000 VND</span>
+                                    </div>
+                                    <!-- <div class="icon_information">
+                                        <i class="fa-solid fa-right-long"></i>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab" id="tab3">
+                        <div class="get">
+                            <p>Bạn chưa có khoản vay nào</p>
+                            <b id="get_account"><a href="./index.html">Bấm để vay ngay</a></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="informationStk">
+            <div class="header_list">
+                <div class="icon_left icon_right">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="txt_acc">Thông tin tài khoản</div>
+                <a href="./index.html" class="resest">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+    
+            </div>
+            <div class="info_accoun_canha">
+                <div class="info_txt__account">
+                    <div class="txtInfo">Tên chủ tài khoản</div>
+                    <div class="txtNumber">DANG HOANG DUONG</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Số tài khoản</div>
+                    <div class="txtNumber">22210003587165</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Số dư hiện tại</div>
+                    <div class="txtNumber">1,152,543 VND</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Số dư khả dụng</div>
+                    <div class="txtNumber">1,152,543 VND</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Số tiền phong tỏa</div>
+                    <div class="txtNumber">0 VND</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Loại tiền</div>
+                    <div class="txtNumber">VND</div>
+                </div>
+                <div class="info_txt__account">
+                    <div class="txtInfo">Chi nhánh mở</div>
+                    <div class="txtNumber">CN Thanh Xuân</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
